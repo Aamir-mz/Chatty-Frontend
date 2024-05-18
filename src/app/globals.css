@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: black;
+  color: rgb(197, 197, 197);
+}
+
+/* golden gradient color  text*/
+.golden {
+  background: linear-gradient(90deg, #ffcc00 0%, #ff6f00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
