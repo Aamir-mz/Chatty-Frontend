@@ -25,7 +25,7 @@ const Chat = () => {
             setUserEmail(userData.email);
             setAccessToken(token);
 
-            const pusher = new Pusher('b8c7db949ba052d945a4', { cluster: 'ap2' });
+            const pusher = new Pusher('', { cluster: '' });
             const channel = pusher.subscribe(`private-${userData.email}`);
             channel.bind('new-message', (data) => {
                 if (data.sender && data.sender.email) {
